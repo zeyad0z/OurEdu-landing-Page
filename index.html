@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav
+      class="bg-white flex justify-between items-center md:w-[63%] md:mx-auto px-5 py-1 mx-auto"
+    >
+      <button id="menuBtn" class="md:hidden text-2xl cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="mr-29 md:mr-0">
+        <img
+          src="https://ouredu.net/wp-content/uploads/2023/08/LOGO-2-300x240-1.png"
+          alt="logo"
+          class="w-16 h-13 md:w-25 md:h-20"
+        />
+      </div>
+
+      <div>
+        <ul class="hidden justify-center items-center gap-5 md:flex">
+          <li>
+            <a href="#index.html" class="nav-link text-xl">الرئيسيه</a>
+          </li>
+          <li>
+            <a href="#AboutUs" class="nav-link text-xl">عن تعليمنا للاستثمار</a>
+          </li>
+          <li>
+            <a href="#Products" class="nav-link text-xl">منتجاتنا</a>
+          </li>
+          <li>
+            <a href="#Blog" class="nav-link text-xl">المدونة</a>
+          </li>
+          <li>
+            <a href="#ContactUs" class="nav-link text-xl">اتصل بنا</a>
+          </li>
+          <li><button class="text-xl cursor-pointer">العربية</button></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-row gap-3">
+        <i
+          class="fa-brands fa-facebook-f text-gray-500 text-sm hover:text-gray-700 transition duration-100"
+        ></i>
+        <i
+          class="fa-brands fa-twitter text-gray-500 text-sm hover:text-gray-700 transition duration-100"
+        ></i>
+        <i
+          class="fa-brands fa-instagram text-gray-500 text-sm hover:text-gray-700 transition duration-100"
+        ></i>
+        <i
+          class="fa-brands fa-linkedin-in text-gray-500 text-sm hover:text-gray-700 transition duration-100"
+        ></i>
+      </div>
+
+      <div id="overlay" class="hidden fixed inset-0 bg-black/40 z-40"></div>
+
+      <div
+        id="sidebar"
+        class="hidden fixed top-0 left-0 w-[60%] h-full bg-white shadow-lg z-50 p-6 transition-transform transform translate-x-[-100%]"
+      >
+        <ul class="flex flex-col gap-4">
+          <li><a href="#index.html" class="nav-link text-md">الرئيسيه</a></li>
+          <hr />
+          <li>
+            <a href="#AboutUs" class="nav-link text-md">عن تعليمنا للاستثمار</a>
+          </li>
+          <hr />
+          <li><a href="#Products" class="nav-link text-md">منتجاتنا</a></li>
+          <hr />
+          <li><a href="#Blog" class="nav-link text-md">المدونة</a></li>
+          <hr />
+          <li><a href="#ContactUs" class="nav-link text-md">اتصل بنا</a></li>
+          <hr />
+          <li><button class="text-md cursor-pointer">العربية</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="flex justify-center items-center m-1 md:m-0 mb-15">
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/1350x1230"
+        />
+
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/1350x900"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+    </section>
+
+    <section class="bg-[#F9F9F9] pb-20 md:pb-24">
+      <div class="flex justify-center items-center">
+        <picture class="mt-10 md:mt-20">
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/400x200"
+          />
+
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/800x200"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+      </div>
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 mt-10 md:mt-15"
+      >
+        <div>
+          <picture>
+            <!-- صورة الموبايل -->
+            <source
+              media="(max-width: 767px)"
+              srcset="https://placehold.co/350x250"
+            />
+
+            <!-- صورة الديسكتوب -->
+            <img
+              src="https://placehold.co/400x350"
+              alt="responsive image"
+              id="section1"
+            />
+          </picture>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <picture>
+            <!-- صورة الموبايل -->
+            <source
+              media="(max-width: 767px)"
+              srcset="https://placehold.co/400x180"
+            />
+
+            <!-- صورة الديسكتوب -->
+            <img
+              src="https://placehold.co/280x220"
+              alt="responsive image"
+              id="section1"
+            />
+          </picture>
+          <picture>
+            <!-- صورة الموبايل -->
+            <source
+              media="(max-width: 767px)"
+              srcset="https://placehold.co/400x180"
+            />
+
+            <!-- صورة الديسكتوب -->
+            <img
+              src="https://placehold.co/280x220"
+              alt="responsive image"
+              id="section1"
+            />
+          </picture>
+          <picture>
+            <!-- صورة الموبايل -->
+            <source
+              media="(max-width: 767px)"
+              srcset="https://placehold.co/400x180"
+            />
+
+            <!-- صورة الديسكتوب -->
+            <img
+              src="https://placehold.co/280x220"
+              alt="responsive image"
+              id="section1"
+            />
+          </picture>
+          <picture>
+            <!-- صورة الموبايل -->
+            <source
+              media="(max-width: 767px)"
+              srcset="https://placehold.co/400x180"
+            />
+
+            <!-- صورة الديسكتوب -->
+            <img
+              src="https://placehold.co/280x220"
+              alt="responsive image"
+              id="section1"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col md:flex-row-reverse justify-center items-center gap-5 md:gap-10 mt-15 md:mt-20 mb-15 md:mb-20"
+    >
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/400x250"
+        />
+
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/500x400"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/400x250"
+        />
+
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/500x400"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+    </section>
+
+    <section class="bg-blue-500 py-20">
+      <div
+        class="flex flex-col md:flex-row-reverse justify-center items-center gap-5 md:gap-30"
+      >
+        <picture>
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/350x250"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/450x350"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture>
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/400x550"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/450x700"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section
+      class="mt-15 md:mt-25 flex flex-col justify-center items-center gap-15"
+    >
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/300x100"
+        />
+
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/500x150"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <div class="flex justify-center items-center gap-10">
+        <picture>
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/440x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/400x300"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture class="hidden md:block">
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/440x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/400x300"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture class="hidden md:block">
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/440x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/400x300"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section
+      class="bg-blue-500 mt-15 md:mt-20 flex flex-col gap-10 md:flex-row justify-center items-center py-25"
+    >
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/400x250"
+        />
+
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/700x350"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <div
+        class="flex justify-center items-center flex-col mt-8 md:mt-0 gap-1 md:gap-10"
+      >
+        <picture>
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/400x150"
+          />
+
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/600x150"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture>
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/400x150"
+          />
+
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/600x150"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#F9F9F9] flex flex-col justify-center items-center gap-13 mt-15 md:mt-0 py-25"
+    >
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/300x100"
+        />
+
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/400x150"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <div class="flex justify-center items-center gap-10">
+        <picture>
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/440x250"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/370x300"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture class="hidden md:block">
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/440x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/370x300"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture class="hidden md:block">
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/440x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/370x300"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col justify-center items-center gap-10 mt-20 md:mt-10"
+    >
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/200x100"
+        />
+
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/350x130"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <div class="flex justify-center items-center gap-10">
+        <picture>
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/400x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/300x450"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture class="hidden md:block">
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/400x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/300x450"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+        <picture class="hidden md:block">
+          <!-- صورة الموبايل -->
+          <source
+            media="(max-width: 767px)"
+            srcset="https://placehold.co/400x400"
+          />
+          <!-- صورة الديسكتوب -->
+          <img
+            src="https://placehold.co/300x450"
+            alt="responsive image"
+            id="section1"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section class="flex justify-center items-center gap-12 mt-25 md:mt-20">
+      <picture>
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/370x300"
+        />
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/150x130"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <picture class="hidden md:block">
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/370x300"
+        />
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/150x130"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <picture class="hidden md:block">
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/370x300"
+        />
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/150x130"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <picture class="hidden md:block">
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/370x300"
+        />
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/150x130"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <picture class="hidden md:block">
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/370x300"
+        />
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/150x130"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+      <picture class="hidden md:block">
+        <!-- صورة الموبايل -->
+        <source
+          media="(max-width: 767px)"
+          srcset="https://placehold.co/370x300"
+        />
+        <!-- صورة الديسكتوب -->
+        <img
+          src="https://placehold.co/150x130"
+          alt="responsive image"
+          id="section1"
+        />
+      </picture>
+    </section>
+
+    <footer
+      class="bg-[#EFF5FA] flex flex-col gap-5 md:flex-row mt-25 pt-12 md:justify-center"
+    >
+      <div class="felx md:col w-full">
+        <div class="flex md:flex-row flex-col justify-between md:mx-80">
+          <div class="flex md:flex-row flex-col">
+            <div class="mx-7 mb-4">
+              <div class="flex justify-end mb-3">
+                <img
+                  src="https://ouredu.net/wp-content/uploads/2021/09/مشروع-جديد-1.png"
+                  alt="footer image"
+                />
+              </div>
+
+              <div class="flex flex-col gap-5 md:gap-3">
+                <p class="text-gray-500">اشترك في نشرتنا الإخبارية</p>
+                <form class="flex flex-col md:flex-row gap-2">
+                  <div class="flex flex-col gap-2">
+                    <label for="email">البريد الالكتروني</label>
+                    <input
+                      type="text"
+                      placeholder="البريد الالكتروني"
+                      name="email"
+                      class="border border-black rounded-sm p-2 bg-white"
+                    />
+                  </div>
+                  <div class="flex md:items-end">
+                    <button
+                      type="submit"
+                      class="bg-blue-900 flex-grow text-white rounded-lg px-5 py-2.5"
+                    >
+                      اشتراك
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3 mx-7 mt-3 md:mt-0">
+              <p class="text-lg">روابط هامه</p>
+              <div class="flex flex-col gap-3">
+                <p class="text-gray-500">الرئيسيه</p>
+                <p class="text-gray-500">منتجاتنا</p>
+                <p class="text-gray-500">المدونة</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-3 mx-7 mt-3 md:mt-0 md:ml-40">
+            <p class="text-lg">المزيد</p>
+            <p class="text-gray-500">عن تعليمنا للاستثمار</p>
+          </div>
+
+          <div class="flex justify-end mx-7 mt-3 md:mt-0">
+            <div class="flex gap-5 flex-col">
+              <p class="text-xl">Contact Us</p>
+              <div class="flex flex-row gap-3">
+                <i
+                  class="fa-brands fa-facebook-f text-gray-500 text-lg hover:text-gray-700 transition duration-100"
+                ></i>
+                <i
+                  class="fa-brands fa-twitter text-gray-500 text-lg hover:text-gray-700 transition duration-100"
+                ></i>
+                <i
+                  class="fa-brands fa-instagram text-gray-500 text-lg hover:text-gray-700 transition duration-100"
+                ></i>
+                <i
+                  class="fa-brands fa-linkedin-in text-gray-500 text-lg hover:text-gray-700 transition duration-100"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <hr />
+          <div
+            class="flex justify-center items-center flex-col md:flex-row gap-2 md:gap-232 py-4"
+          >
+            <p>تعليمنا للاستثمار <span class="text-gray-500">2023</span></p>
+            <p class="text-md text-gray-500">جميع الحقوق محفوظة</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

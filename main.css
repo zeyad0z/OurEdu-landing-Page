@@ -1,0 +1,5 @@
+@import "tailwindcss";
+/* in your tailwind.css (or add via @apply) */
+.active {
+  @apply text-blue-500 font-bold;
+}
