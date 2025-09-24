@@ -111,7 +111,7 @@
             </p>
           </div>
           <button
-            class="bg-[#10A6E0] px-5 py-2 rounded-2xl border-2 border-white md:border-0 md:rounded-md text-white mt-7 md:mt-10 font-semibold"
+            class="bg-[#10A6E0] hover:bg-[#0e94ca] px-5 py-2 rounded-2xl border-2 border-white md:border-0 md:rounded-md text-white mt-7 md:mt-10 font-semibold cursor-pointer transition-all duration-200 ease-in-out"
           >
             اعرف المزيد
           </button>
@@ -223,68 +223,124 @@
     </section>
 
     <section
-      class="flex flex-col md:flex-row-reverse justify-center items-center gap-5 md:gap-10 mt-15 md:mt-20 mb-15 md:mb-20"
+      class="flex flex-col md:flex-row-reverse justify-center items-center gap-5 md:gap-35 mt-15 md:mt-20 mb-15 md:mb-20"
     >
-      <picture>
-        <!-- صورة الموبايل -->
-        <source
-          media="(max-width: 767px)"
-          srcset="https://placehold.co/400x250"
-        />
-
-        <!-- صورة الديسكتوب -->
+      <div>
         <img
-          src="https://placehold.co/500x400"
-          alt="responsive image"
-          id="section1"
+          class="w-[90%] md:w-full mr-10 md:mr-0"
+          src="https://ouredu.net/wp-content/uploads/2023/10/Education-partner.png"
+          alt=""
         />
-      </picture>
-      <picture>
-        <!-- صورة الموبايل -->
-        <source
-          media="(max-width: 767px)"
-          srcset="https://placehold.co/400x250"
-        />
+      </div>
+      <div class="flex flex-col justify-center items-center md:items-start">
+        <div class="flex flex-col items-center md:block w-[25rem]">
+          <h1
+            class="text-[1.6rem] md:text-[2.5rem] leading-tight text-center md:text-start"
+          >
+            <p class="inline md:block">
+              منصّة تعليمنا <span class="md:hidden">...</span>
+            </p>
+            <p class="inline md:block">
+              شريك <span class="text-[#08a1dd]">واحد</span>
+            </p>
+            <p>لكل متطلبات التعليم</p>
+          </h1>
 
-        <!-- صورة الديسكتوب -->
-        <img
-          src="https://placehold.co/500x400"
-          alt="responsive image"
-          id="section1"
-        />
-      </picture>
+          <p
+            class="mt-5 text-gray-400 text-[1.04rem] w-[27.5rem] md:w-[30rem] font-medium"
+          >
+            نظام تعليمي شامل، وفعال وقوي تجده في منصتنا، لأننا نضع معك نظام
+            التعلم المناسب لمؤسستك التعليمية، لنخدم المعلمين، والطُلاب وأولياء
+            الأمور.
+          </p>
+        </div>
+        <button
+          class="ml-55 md:ml-0 bg-[#10A6E0] hover:bg-[#0e94ca] px-4 py-2 rounded-lg border-2 border-white md:border-0 md:rounded-md text-white mt-7 md:mt-10 font-medium cursor-pointer transition-all duration-200 ease-in-out"
+        >
+          المزيد من المعلومات
+        </button>
+      </div>
     </section>
 
-    <section class="bg-blue-500 py-20">
+    <section class="bg-[#0E91E3] py-25">
       <div
-        class="flex flex-col md:flex-row-reverse justify-center items-center gap-5 md:gap-30"
+        class="flex flex-col md:flex-row-reverse justify-center items-center gap-5 md:gap-0"
       >
-        <picture>
-          <!-- صورة الموبايل -->
-          <source
-            media="(max-width: 767px)"
-            srcset="https://placehold.co/350x250"
-          />
-          <!-- صورة الديسكتوب -->
+        <div class="md:mr-20">
           <img
-            src="https://placehold.co/450x350"
-            alt="responsive image"
-            id="section1"
+            src="https://ouredu.net/wp-content/uploads/2023/10/Advantage.png"
+            alt=""
           />
-        </picture>
-        <picture>
-          <!-- صورة الموبايل -->
-          <source
-            media="(max-width: 767px)"
-            srcset="https://placehold.co/400x550"
-          />
-          <!-- صورة الديسكتوب -->
-          <img
-            src="https://placehold.co/450x700"
-            alt="responsive image"
-            id="section1"
-          />
-        </picture>
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-start text-white md:mr-10"
+        >
+          <p class="text-[0.9rem] md:text-[1.05rem] font-semibold mb-2">
+            لماذا نظام تعليمنا؟ كم تطبيق تحتاج لإدارة أي منظومة تعليمية؟
+          </p>
+          <h1
+            class="text-[1.55rem] font-semibold md:text-[2.7rem] w-[26rem] md:w-[28rem] leading-tight"
+          >
+            لأننا نُقدم لكم العديد من المميزات التي تُسهل عملية التعلم في حل
+            واحد متكامل
+          </h1>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 w-[28rem] gap-x-5 gap-y-5 md:gap-y-10 mt-8"
+          >
+            <div class="flex justify-center gap-5 w-[25rem] md:w-full">
+              <p class="text-[3rem] font-bold">1.</p>
+              <div class="flex justify-center flex-col items-start">
+                <p class="mb-2 text-[1.2rem] font-semibold">تعليم متطور</p>
+                <p class="text-[0.9rem] md:text-base md:w-[9rem]">
+                  يفتح لك آفاق عالمية من التجارب العلمية الفعالة والمُبتكرة.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center gap-5">
+              <p class="text-[3rem] font-bold">2.</p>
+              <div class="flex justify-center flex-col items-start">
+                <p class="mb-2 text-[1.2rem] font-semibold">نظام إدارة مُحكم</p>
+                <p class="text-[0.9rem] md:text-base md:w-[9rem]">
+                  انسيابية في إدارة العملية التعليمية بأكملها لما لدينا من أدوات
+                  إدارية فعالة.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center gap-5 w-[16.2rem] md:w-full">
+              <p class="text-[3rem] font-bold">3.</p>
+              <div class="flex justify-center flex-col items-start">
+                <p class="mb-2 text-[1.2rem] font-semibold">النمو المؤسسي</p>
+                <p class="text-[0.9rem] md:text-base md:w-[9rem]">
+                  عزز نمو مؤسستك من خلال حلولنا.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex justify-center gap-5 w-[25rem] md:w-full">
+              <p class="text-[3rem] font-bold">4.</p>
+              <div class="flex justify-center flex-col items-start">
+                <p
+                  class="mb-2 text-[1.2rem] md:w-[9rem] font-semibold leading-tight"
+                >
+                  تعليم مُعَد بدقة ليُناسب تقدم المستقبل
+                </p>
+                <p class="text-[0.9rem] md:w-[10rem]">
+                  باستخدام أحدث أدوات التعلم في القرن الحادي والعشرين.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="ml-55 md:ml-0 bg-white hover:bg-gray-300 px-4 py-3 rounded-lg text-sm md:rounded-md text-black mt-7 md:mt-10 cursor-pointer transition-all duration-200 ease-in-out"
+          >
+            أطلب عرض تجريبي الآن
+          </button>
+        </div>
       </div>
     </section>
 
