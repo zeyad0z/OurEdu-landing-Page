@@ -39,3 +39,4 @@ menuBtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   closeSidebar();
 });
+
